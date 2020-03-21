@@ -8,7 +8,7 @@ import IconInstagram from "../../assets/Instagram.svg";
 const Section1g = () => {
   return (
     <div className="section1g">
-      <Container >
+      <Container fluid>
         <Row>
           <Col>
             <h2>Skontaktuj się z nami</h2>

@@ -7,7 +7,7 @@ import ImgSignature  from '../../assets/Signature.svg';
 const Section1e = () => {
   return (
     <div className="secton1d">
-      <Container>
+      <Container fluid>
         <Row>
           <Col debug xl={6}>
             <AboutUs />

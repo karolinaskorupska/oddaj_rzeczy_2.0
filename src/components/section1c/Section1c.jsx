@@ -6,7 +6,7 @@ import { Container, Row, Col } from "react-grid-system";
 
 const Section1c = () => {
   return (
-    <Container>
+    <Container fluid>
       <div className="secton1c">
         <Row>
           <Col debug>

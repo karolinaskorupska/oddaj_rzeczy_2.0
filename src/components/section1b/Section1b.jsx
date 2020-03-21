@@ -5,15 +5,15 @@ import { Container, Row, Col } from "react-grid-system";
 
 const Section1b = () => {
   return (
-    <Container>
+    <Container fluid style={{margin:0,padding:0}}>
       <div className="Section1b">
         <Row>
-          <Col debug xl={6}>
+          {/* <Col  xl={5}>
             <div className="imageBox">
               <img src={ImgHomeHero} alt="Home Hero Img"></img>
             </div>
-          </Col>
-          <Col debug xl={6}>
+          </Col> */}
+          <Col  xl={7}>
             <div className="header">
               <Header />
             </div>

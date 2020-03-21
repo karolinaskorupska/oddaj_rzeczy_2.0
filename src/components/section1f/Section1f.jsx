@@ -6,7 +6,7 @@ import ImgDecoration from "../../assets/Decoration.svg";
 const Section1f = () => {
   return (
     <div className="secton1f">
-      <Container>
+      <Container fluid>
         <Row>
           <Col>
             <h2>Komu pomagamy?</h2>

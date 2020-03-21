@@ -7,7 +7,7 @@ import StepsButton from "./StepsButtons";
 const Section1d = () => {
   return (
     <div className="secton1d">
-      <Container>
+      <Container fluid>
         <Row>
           <Col debug>
             <StepsHeader />
