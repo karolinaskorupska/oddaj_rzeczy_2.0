@@ -6,16 +6,16 @@ import { Container, Row, Col } from "react-grid-system";
 
 const Section1c = () => {
   return (
-    <Container fluid>
-      <div className="secton1c">
+    <Container fluid style={{ margin: 0, padding: 0 }}>
+      <div className="Section1c">
         <Row>
-          <Col debug>
+          <Col >
             <Bags />
           </Col>
-          <Col debug>
+          <Col >
             <Organizations />
           </Col>
-          <Col debug>
+          <Col >
             <Collections />
           </Col>
         </Row>
