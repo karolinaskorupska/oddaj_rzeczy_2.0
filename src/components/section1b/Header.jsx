@@ -9,11 +9,13 @@ const Header = () => {
     <>
       <LogAndReg />
       <HeaderNav />
-      <h1>
-        Zacznij pomagać! <br></br> Oddaj niechciane rzeczy w zaufane ręce
-      </h1>
-      <img src={ImgDecoration} alt="Decoration Img"></img>
-      <HeaderButtons />
+      <div className="txt">
+        <h1>
+          Zacznij pomagać! <br></br> Oddaj niechciane rzeczy w zaufane ręce
+        </h1>
+        <img src={ImgDecoration} alt="Decoration Img"></img>
+        <HeaderButtons />
+      </div>
     </>
   );
 };

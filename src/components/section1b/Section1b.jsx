@@ -5,18 +5,13 @@ import { Container, Row, Col } from "react-grid-system";
 
 const Section1b = () => {
   return (
-    <Container fluid style={{margin:0,padding:0}}>
+    <Container fluid style={{ margin: 0, padding: 0 }}>
       <div className="Section1b">
         <Row>
-          {/* <Col  xl={5}>
-            <div className="imageBox">
-              <img src={ImgHomeHero} alt="Home Hero Img"></img>
-            </div>
-          </Col> */}
-          <Col  xl={7}>
-            <div className="header">
+          <Col>
+            <header>
               <Header />
-            </div>
+            </header>
           </Col>
         </Row>
       </div>

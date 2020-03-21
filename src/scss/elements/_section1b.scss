@@ -9,4 +9,98 @@
     background-image: url("../../assets/Home-Hero-Image.jpg");
     background-position-x: -30rem;
     background-repeat: no-repeat;
+
+        header{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: flex-end;
+            margin-top: 8%;
+            margin-right: 10%;
+
+            .logAndReg{
+                display: flex;
+                flex-direction: row;
+
+                button{
+                    width: 7rem;
+                    font-family: $font-base;
+                    font-size: $baseFontSize;
+                    color: $color5;
+                    border:none;
+                    background-color: transparent;
+                    padding: 0.5rem 1rem;
+
+                    &:hover{
+                        border: 1px solid $color3;
+                    }
+                }
+
+            }
+
+            nav{
+                margin-top: 3%;
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    li{
+                        display: inline-block;
+                        margin: 1rem;
+                        
+                        
+                        a{
+                            padding: 0.5rem 1rem;
+                            text-decoration: none;
+                            color: $color5;
+                            display: block;
+                            text-align: center;
+                            font-size: 18px;
+                            font-family: $font-base;
+                            letter-spacing: 0;
+                            
+
+                            &:hover{
+                                border: 0.75px solid $color4;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            .txt{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10%;
+                width: 100%;
+
+                h1{
+                    text-align: center;
+                    color: $color5;
+                    font-size: 38px;
+                    letter-spacing: -0.76px;
+                }
+                img{
+                    margin-top: 3%;
+                }
+
+                .headerButtons{
+                    margin-top: 10%;
+
+                    button{
+                        text-align: center;
+                        font-weight: 200;
+                        font-size: 36px;
+                        text-transform: uppercase;
+                        border: 0.75px solid $color4;
+                        padding: 1rem 3rem;
+                        background-color:transparent ;
+                        width: 18rem;
+                        margin: 0 1rem;
+                    }
+                }
+            }
+        }
 }

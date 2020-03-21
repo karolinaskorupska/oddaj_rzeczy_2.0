@@ -4,10 +4,10 @@ import BtnOrganize from './BtnOrganize';
 
 const HeaderButtons = () => {
   return (
-    <>
+    <div className="headerButtons">
       <BtnGiveAway />
       <BtnOrganize />
-    </>
+    </div>
   );
 };
 

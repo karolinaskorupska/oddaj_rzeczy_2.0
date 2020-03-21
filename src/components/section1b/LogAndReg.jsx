@@ -4,10 +4,10 @@ import ButtonRegister from './ButtonRegister';
 
 const LogAndReg = () => {
   return (
-    <>
+    <div className="logAndReg">
       <ButtonLogin />
       <ButtonRegister />
-    </>
+    </div>
   );
 };
 
