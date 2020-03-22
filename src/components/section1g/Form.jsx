@@ -31,8 +31,8 @@ class Form extends Component {
           <div className="textarea">
             <label>Wpisz swoją wiadomość</label>
             <textarea
-              wrap="on"
-              rows="10"
+              wrap="off"
+              rows="5"
               placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
               name="message"
               //   value={message}

@@ -8,8 +8,8 @@ const Section1g = () => {
   return (
     <Container fluid style={{ margin: 0, padding: 0 }}>
       <div className="Section1g">
-        <Row>
-          <Col>
+        <Row style={{marginRight: "5rem"}}>
+          <Col >
             <div className="txtBox">
               <h2>Skontaktuj się z nami</h2>
               <img src={ImgDecoration} alt="Decoration Img"></img>

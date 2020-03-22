@@ -8,10 +8,10 @@ const Footer = () => {
     <footer>
       <Container fluid style={{ margin: 0, padding: 0 }}>
         <Row >
-          <Col xl={10} >
+          <Col xl={6} >
             <div className="copyright"><p>Copyright by Coders Lab</p></div>
           </Col>
-          <Col xl={2}>
+          <Col xl={6}>
             <div className="icons">
               <img src={IconFacebook} alt="Facebook icon"></img>
               <img src={IconInstagram} alt="Instagram icon"></img>
