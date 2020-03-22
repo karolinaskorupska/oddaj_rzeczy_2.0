@@ -1,24 +1,25 @@
 import React from "react";
 import { Container, Row, Col } from "react-grid-system";
-import AboutUs from './AboutUs';
-import ImgPeople from '../../assets/People.jpg';
-import ImgSignature  from '../../assets/Signature.svg';
+import AboutUs from "./AboutUs";
+import ImgSignature from "../../assets/Signature.svg";
 
 const Section1e = () => {
   return (
-    <div className="secton1d">
-      <Container fluid>
+    <Container fluid style={{ margin: 0, padding: 0 }}>
+      <div className="Section1e">
         <Row>
-          <Col debug xl={6}>
-            <AboutUs />
-            <img src={ImgSignature} alt="Signature Img"></img>
+          <Col xl={6} style={{margin:0}}>
+            <div className="TxtBox">
+              <AboutUs />
+              <img src={ImgSignature} alt="Signature Img" className="signature" ></img>
+            </div>
           </Col>
-          <Col debug xl={6}>
-              <img src={ImgPeople} alt="People Img"></img>
+          <Col xl={6} style={{margin:0}}>
+            <div className="imgPeople"></div>
           </Col>
         </Row>
-      </Container>
-    </div>
+      </div>
+    </Container>
   );
 };
 

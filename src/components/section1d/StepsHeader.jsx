@@ -5,6 +5,7 @@ const StepsHeader =()=>{
     return(
         <div className="stepsHeader">
             <h2>Wystarczą 4 proste kroki</h2>
+            <div></div>
             <img src={ImgDecoration} alt="Decoration Img"></img>
         </div>
     )

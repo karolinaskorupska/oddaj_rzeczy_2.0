@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./Header";
-import ImgHomeHero from "../../assets/Home-Hero-Image.jpg";
 import { Container, Row, Col } from "react-grid-system";
 
 const Section1b = () => {

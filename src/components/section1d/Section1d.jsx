@@ -2,14 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-grid-system";
 import StepsHeader from "./StepsHeader";
 import StepsImages from "./StepsImages";
-import StepsButton from "./StepsButtons";
+import StepsButton from "./StepsButton";
 
 const Section1d = () => {
   return (
-    <div className="secton1d">
-      <Container fluid>
+    <div className="Section1d">
+      <Container fluid style={{ margin: 0, padding: 0 }}>
         <Row>
-          <Col debug>
+          <Col>
             <StepsHeader />
             <StepsImages />
             <StepsButton />

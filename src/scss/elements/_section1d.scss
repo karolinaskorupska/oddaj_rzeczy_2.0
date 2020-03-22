@@ -1,0 +1,85 @@
+
+.Section1d{
+
+    .stepsHeader{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+            text-align: center;
+            font-weight: 400;
+            font-size: 38px;
+            font-family: $baseFontSize;
+            color: $color5;
+        }
+        img{
+            margin-top: 1.5rem;
+            display: block;
+        }
+    }
+    .stepsImages{
+        width: 100%;
+        background-color: $color1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        
+        .step{
+            margin: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h3{
+                margin-top: 1rem;
+                font-size: 18px;
+                font-weight: 400;
+                font-family: $baseFontSize;
+                color: $color5;
+                letter-spacing: 0;
+            }
+
+            div{
+                margin-top: 1rem;
+                width: 5rem;
+                height: 1px;
+                background-color: $color5;
+                display: block;
+                
+            }
+            p{
+                text-align: center;
+                font-size: 16px;
+                font-family: $baseFontSize;
+                color: $color5;
+                font-weight: 400;
+                margin-top: 1rem;
+                width: 10rem;
+            }
+        }
+    }
+    .StepsButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3em;
+
+        button{
+            border: 0.75px solid $color5;
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            font-family: $font-base;
+            font-size: 36px;
+            letter-spacing: 0;
+            color: $color5;
+            background-color: white;
+            font-weight: 300;
+        }
+    }
+}
