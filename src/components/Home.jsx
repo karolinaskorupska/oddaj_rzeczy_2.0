@@ -5,6 +5,7 @@ import Section1d from "./section1d/Section1d";
 import Section1e from "./section1e/Section1e";
 import Section1f from "./section1f/Section1f";
 import Section1g from "./section1g/Section1g";
+import Footer from "./section1g/Footer";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Section1f />
         <Section1g />
       </main>
+      <Footer/>
     </div>
   );
 };

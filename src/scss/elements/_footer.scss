@@ -1,0 +1,22 @@
+footer{
+    width: 100%;
+    
+    .copyright{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        p{
+            display: block;
+            text-align: center;
+        }
+        
+    }
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}

@@ -8,13 +8,13 @@ const Section1e = () => {
     <Container fluid style={{ margin: 0, padding: 0 }}>
       <div className="Section1e">
         <Row>
-          <Col xl={6} style={{margin:0}}>
+          <Col xl={6} >
             <div className="TxtBox">
               <AboutUs />
               <img src={ImgSignature} alt="Signature Img" className="signature" ></img>
             </div>
           </Col>
-          <Col xl={6} style={{margin:0}}>
+          <Col xl={6} >
             <div className="imgPeople"></div>
           </Col>
         </Row>

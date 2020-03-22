@@ -5,10 +5,10 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
-
     background-image: url("../../assets/Home-Hero-Image.jpg");
     background-position-x: -30rem;
     background-repeat: no-repeat;
+    overflow: hidden;
 
         header{
             display: flex;
@@ -17,13 +17,15 @@
             align-items: flex-end;
             margin-top: 3rem;
             width: 100%;
-            
+            right: 0;
 
+    
             .logAndReg{
                 display: flex;
                 flex-direction: row;
                 margin-right: 10%;
                 justify-content: flex-end;
+                
 
                 button{
                     width: 7rem;
