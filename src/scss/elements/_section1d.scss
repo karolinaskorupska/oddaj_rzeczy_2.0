@@ -2,7 +2,8 @@
 .Section1d{
 
     .stepsHeader{
-        margin-top: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -15,7 +16,7 @@
             color: $color5;
         }
         img{
-            margin-top: 1.5rem;
+            padding-top: 1.5rem;
             display: block;
         }
     }
@@ -26,18 +27,18 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         
         .step{
-            margin: 3rem;
+            padding: 3rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
             h3{
-                margin-top: 1rem;
+                padding-top: 1rem;
                 font-size: 18px;
                 font-weight: 400;
                 font-family: $baseFontSize;
@@ -59,7 +60,7 @@
                 font-family: $baseFontSize;
                 color: $color5;
                 font-weight: 400;
-                margin-top: 1rem;
+                padding-top: 1rem;
                 width: 10rem;
             }
         }
@@ -68,7 +69,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 3em;
+        padding: 3em;
 
         button{
             border: 0.75px solid $color5;

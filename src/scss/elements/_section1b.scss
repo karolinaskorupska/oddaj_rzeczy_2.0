@@ -1,6 +1,4 @@
 .Section1b{
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -8,22 +6,21 @@
     background-image: url("../../assets/Home-Hero-Image.jpg");
     background-position-x: -30rem;
     background-repeat: no-repeat;
-    overflow: hidden;
-
+    overflow-x: hidden;
+    padding-top:2rem;
+    padding-bottom: 18rem;
+    padding-right: 2rem;
         header{
             display: flex;
             flex-direction: column;
             justify-content: start;
             align-items: flex-end;
-            margin-top: 3rem;
             width: 100%;
-            right: 0;
 
-    
             .logAndReg{
                 display: flex;
                 flex-direction: row;
-                margin-right: 10%;
+                padding-right: 4rem;
                 justify-content: flex-end;
                 
 
@@ -35,6 +32,8 @@
                     border:none;
                     background-color: transparent;
                     padding: 0.5rem 1rem;
+                    font-weight: 200;
+                    border: 1px solid transparent;
 
                     &:hover{
                         border: 1px solid $color3;
@@ -44,9 +43,9 @@
             }
 
             nav{
-                margin-top: 3%;
+                padding-top: 2rem;
                 width: 100%;
-                margin-right: 10%;
+                padding-right: 4rem;
                 
                 ul{
                     display: flex;
@@ -64,10 +63,10 @@
                             font-size: 18px;
                             font-family: $font-base;
                             letter-spacing: 0;
-                            
+                            border: 0.75px solid rgba(0,0,0,0);
 
                             &:hover{
-                                border: 0.75px solid $color4;
+                                border-color: $color4;
                                 
                             }
                         }
@@ -80,9 +79,9 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                margin-top: 30%;
+                padding-top: 12rem;
                 width: 100%;
-                margin-right: 10%;
+                padding-right: 4rem;
 
                 h1{
                     text-align: center;
@@ -95,7 +94,7 @@
                 }
 
                 .headerButtons{
-                    margin-top: 10%;
+                    padding-top: 4rem;
                     display: flex;
                     flex-direction: row;
 

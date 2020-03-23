@@ -2,7 +2,7 @@ import React from "react";
 import Form from "./Form";
 import { Container, Row, Col } from "react-grid-system";
 import ImgDecoration from "../../assets/Decoration.svg";
-
+import Footer from './Footer';
 
 const Section1g = () => {
   return (
@@ -15,6 +15,11 @@ const Section1g = () => {
               <img src={ImgDecoration} alt="Decoration Img"></img>
               <Form />
             </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+          <Footer/>
           </Col>
         </Row>
       </div>
