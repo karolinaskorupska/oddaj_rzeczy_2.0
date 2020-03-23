@@ -6,7 +6,7 @@ import StepsButton from "./StepsButton";
 
 const Section1d = () => {
   return (
-    <div className="Section1d">
+    <div className="Section1d" id="Section1c">
       <Container fluid style={{ margin: 0, padding: 0 }}>
         <Row>
           <Col>

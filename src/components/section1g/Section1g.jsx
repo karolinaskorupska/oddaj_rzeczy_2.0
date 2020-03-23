@@ -7,7 +7,7 @@ import Footer from './Footer';
 const Section1g = () => {
   return (
     <Container fluid style={{ margin: 0, padding: 0 }}>
-      <div className="Section1g">
+      <div className="Section1g" id="Section1g">
         <Row style={{marginRight: "5rem"}}>
           <Col >
             <div className="txtBox">

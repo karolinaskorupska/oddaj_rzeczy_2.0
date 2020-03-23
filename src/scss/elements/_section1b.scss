@@ -64,6 +64,7 @@
                             font-family: $font-base;
                             letter-spacing: 0;
                             border: 0.75px solid rgba(0,0,0,0);
+                            cursor: pointer;
 
                             &:hover{
                                 border-color: $color4;

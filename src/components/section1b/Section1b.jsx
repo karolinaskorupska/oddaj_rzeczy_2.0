@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-grid-system";
 const Section1b = () => {
   return (
     <Container fluid style={{ margin: 0, padding: 0 }}>
-      <div className="Section1b">
+      <div className="Section1b" id="Section1b">
         <Row>
           <Col>
             <header>

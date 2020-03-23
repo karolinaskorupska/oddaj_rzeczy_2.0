@@ -6,7 +6,7 @@ import ImgSignature from "../../assets/Signature.svg";
 const Section1e = () => {
   return (
     <Container fluid style={{ margin: 0, padding: 0 }}>
-      <div className="Section1e">
+      <div className="Section1e" id="Section1e">
         <Row>
           <Col xl={6} >
             <div className="TxtBox">

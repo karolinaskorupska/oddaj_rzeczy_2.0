@@ -1,28 +1,34 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
-const HeaderNav = () => {
+const Header = () => {
     return(
-        <nav className="headerNav">
+        <nav className="header">
             <ul>
                 <li>
-                    <NavLink exact to= "/Home" title="Start" target="_self">Start</NavLink>
+                    <Link to= "Section1b" title="Start"
+                      smooth={true} offset={0} duration={500} >Start</Link>
                 </li>
                 <li>
-                    <NavLink exact to= "/" title="O co chodzi?" target="_self">O co chodzi?</NavLink>
+                    <Link to= "Section1d" title="O co chodzi?"
+                    smooth={true} offset={0} duration={500} >O co chodzi?</Link>
                 </li>
                 <li>
-                    <NavLink exact to= "/" title="O nas" target="_self">O nas</NavLink>
+                    <Link to= "Section1e" title="O nas" 
+                    smooth={true} offset={0} duration={800}>O nas</Link>
                 </li>
                 <li>
-                    <NavLink exact to= "/" title="Fundacja i organizacje" target="_self">Fundacja i organizacje</NavLink>
+                    <Link to= "Section1f" title="Fundacja i organizacje" 
+                    smooth={true} offset={0} duration={1000}>Fundacja i organizacje</Link>
                 </li>
                 <li>
-                    <NavLink exact to= "/" title="Kontakt" target="_self">Kontakt</NavLink>
+                    <Link to= "Section1g" title="Kontakt" 
+                    smooth={true} offset={0} duration={1200}>Kontakt</Link>
                 </li>
             </ul>
         </nav>
     )
 }
 
-export default HeaderNav;
+export default Header;
