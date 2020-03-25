@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+
 class Form extends Component {
   state = {
     name: "",
@@ -14,23 +15,35 @@ class Form extends Component {
   createNewContact = () => {
     const { name, email, message } = this.state;
 
-    const newContact = {
+    let newContact = {
       name: name,
       email: email,
       message: message
     };
 
-    fetch("http://localhost:4000/contactForm", {
+
+    //"http://localhost:4000/contactForm"
+    //"https://fer-api.coderslab.pl/v1/portfolio/contact"
+    fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(newContact)
     })
+      .then(response => {
+        if(response.ok){
+          return response
+        }
+        throw new Error('Network error- błąd połączenia z serwerem')
+      })
       .then(response => response.json())
-      .then(newContact => {
-        console.log({ newContact });
-      });
+      .then(newContact =>{
+        console.log( { newContact })
+      })
+     
+      .catch(error => console.error(error));
+
   };
 
 
@@ -43,7 +56,7 @@ class Form extends Component {
   validate = () => {
     const { name, email, message } = this.state;
     let isValid = true;
-
+  
     if (name ==="" || name.includes(" ") !== -1) {
       isValid = false;
       this.setState({ nameError: "Name error - wpisz jedno imię" });
@@ -60,7 +73,8 @@ class Form extends Component {
       isValid = true;
     }
 
-    if (email === "" ||  email.indexOf("@") === -1) {
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!re.test(email)) {
       isValid = false;
       this.setState({ emailError: "Uzupełnij dane o @" });
     } else {
