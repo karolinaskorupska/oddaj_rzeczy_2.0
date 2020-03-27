@@ -1,0 +1,87 @@
+
+.Login{
+    padding-top: 2rem;
+    padding-right: 4rem;
+    width: 100%;
+    
+    .logAndReg{
+        display: flex;
+        flex-direction: row;
+        padding-right: 4rem;
+        justify-content: flex-end; 
+        button{
+            width: 7rem;
+            font-family: $font-base;
+            font-size: $baseFontSize;
+            color: $color5;
+            border:none;
+            background-color: transparent;
+            padding: 0.5rem 1rem;
+            font-weight: 200;
+            border: 1px solid transparent;
+
+            &:hover{
+                border: 1px solid $color3;
+            }
+        }
+    }
+    nav{
+        padding-top: 2rem;
+        width: 100%;
+        padding-right: 4rem;
+        
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            li{
+                display: block;
+                
+                a{
+                    padding: 0.5rem 1rem;
+                    text-decoration: none;
+                    color: $color5;
+                    display: block;
+                    text-align: center;
+                    font-size: 18px;
+                    font-family: $font-base;
+                    letter-spacing: 0;
+                    border: 0.75px solid rgba(0,0,0,0);
+                    cursor: pointer;
+
+                    &:hover{
+                        border-color: $color4;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .Section2a{
+        overflow-x: hidden;
+        padding-top:2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        h1{
+            text-align: center;
+            color: $color5;
+            font-size: 38px;
+            letter-spacing: -0.76px;
+        }
+        img{
+            margin:2rem 0;
+        }
+
+        .LoginBox{
+            background-color: $color1;
+        }
+    }
+
+
+}
+
+

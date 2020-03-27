@@ -145,3 +145,20 @@
     }
    
 }
+.AlertSent{
+    font-family: $font-base;
+    font-weight: 800;
+    color: green;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+}
+.errorMessage{
+    font-family: $font-base;
+    font-weight: 800;
+    color: red;
+    font-size: 14px;
+    display: inline-block;
+    text-align: start;
+    padding:0.5rem;
+}

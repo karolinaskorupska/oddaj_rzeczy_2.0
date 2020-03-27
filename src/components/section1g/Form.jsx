@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 class Form extends Component {
   state = {
     name: "",
@@ -21,9 +20,6 @@ class Form extends Component {
       message: message
     };
 
-
-    //"http://localhost:4000/contactForm"
-    //"https://fer-api.coderslab.pl/v1/portfolio/contact"
     fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
       method: "POST",
       headers: {
@@ -32,20 +28,24 @@ class Form extends Component {
       body: JSON.stringify(newContact)
     })
       .then(response => {
-        if(response.ok){
-          return response
+        if (response.ok) {
+          return response;
         }
-        throw new Error('Network error- błąd połączenia z serwerem')
+        throw new Error("Network error- błąd połączenia z serwerem");
       })
       .then(response => response.json())
-      .then(newContact =>{
-        console.log( { newContact })
+      .then(newContact => {
+        console.log(newContact.status);
+        if (newContact.status === "succes") {
+          this.setState({ newContactSent: true });
+        }
       })
-     
-      .catch(error => console.error(error));
+
+      .catch(error => {
+        console.log(error);
+      });
 
   };
-
 
   handleChange = event => {
     this.setState({
@@ -54,56 +54,85 @@ class Form extends Component {
   };
 
   validate = () => {
-    const { name, email, message } = this.state;
     let isValid = true;
-  
-    if (name ==="" || name.includes(" ") !== -1) {
+    
+    if (this.validateName && this.validateEmail && this.validateMessage) {
+      isValid = true;
+      return isValid;
+    } else {
       isValid = false;
-      this.setState({ nameError: "Name error - wpisz jedno imię" });
+      return isValid;
+    }
+  };
+  validateName = () => {
+    const { name } = this.state;
+    let isNameValid = true;
+    if (name === "" || name.match(" ")) {
+      isNameValid = false;
+      this.setState({ nameError: "Podane imię jest nieprawidłowe!" });
     } else {
       this.setState({ nameError: "" });
-      isValid = true;
+      isNameValid = true;
     }
-    
-    if (message ==="" || message.length <= 120) {
-      isValid = false;
-      this.setState({ messageError: "Message error- wpisz conajmniej 120 znaków" });
-    } else {
-      this.setState({ messageError: "" });
-      isValid = true;
-    }
-
+    return isNameValid;
+  };
+  validateEmail = () => {
+    const { email } = this.state;
+    let isEmailValid = true;
     const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!re.test(email)) {
-      isValid = false;
-      this.setState({ emailError: "Uzupełnij dane o @" });
+      isEmailValid = false;
+      this.setState({ emailError: "Podany email jest nieprawidłowy!" });
     } else {
       this.setState({ emailError: "" });
-      isValid = true;
+      isEmailValid = true;
     }
+    return isEmailValid;
+  };
+  validateMessage = () => {
+    const { message } = this.state;
+    let isMessageValid = true;
 
-    
-    return isValid;
+    if (message === "" || message.length <= 120) {
+      isMessageValid = false;
+      this.setState({
+        messageError: "Wiadomość musi mieć conajmniej 120 znaków!"
+      });
+    } else {
+      this.setState({ messageError: "" });
+      isMessageValid = true;
+    }
+    return isMessageValid;
   };
 
   handleSubmit = event => {
     event.preventDefault();
-   
-   if(this.validate()){
-     console.log("zwalidowano ok");;
+    if(this.validateName && this.validateEmail && this.validateMessage){
+      this.createNewContact();
+    }
 
-    this.createNewContact();
-   }
-
-  
   };
 
   render() {
-    const { name, email, message } = this.state;
-    console.log(this.state.messageError)
+    const {
+      name,
+      email,
+      message,
+      newContactSent,
+      emailError,
+      nameError,
+      messageError
+    } = this.state;
+   
 
     return (
       <div className="form">
+        {newContactSent && (
+          <div className="AlertSent">
+            <span>Wiadomość została wysłana!</span>
+            <span>Wkrótce się skontaktujemy</span>
+          </div>
+        )}
         <form>
           <div className="personalData">
             <div className="name">
@@ -113,9 +142,12 @@ class Form extends Component {
                 name="name"
                 value={name}
                 onChange={this.handleChange}
+                onBlur={this.validateName}
                 placeholder="Krzysztof"
               />
+              {nameError && <span className="errorMessage">{nameError}</span>}
             </div>
+
             <div className="email">
               <label>Wpisz swój e-mail</label>
               <input
@@ -123,8 +155,10 @@ class Form extends Component {
                 type="email"
                 name="email"
                 onChange={this.handleChange}
+                onBlur={this.validateEmail}
                 placeholder="abx@xyz.pl"
               />
+              {emailError && <span className="errorMessage">{emailError}</span>}
             </div>
           </div>
 
@@ -138,7 +172,11 @@ class Form extends Component {
               name="message"
               value={message}
               onChange={this.handleChange}
+              onBlur={this.validateMessage}
             ></textarea>
+            {messageError && (
+              <span className="errorMessage">{messageError}</span>
+            )}
           </div>
         </form>
         <button
