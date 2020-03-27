@@ -1,16 +1,11 @@
-{
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "contactForm": [
-    {
-      "name":"name",
-      "email":"email@email.com",
-      "message": "zaiwrera duzo znaków"
-    }
-  ]
+{ 
+    "DataForSection1c": 
+        {
+          "bags":3,
+          "organizations":2,
+          "collections":20
+        }
+        
+    
+
 }

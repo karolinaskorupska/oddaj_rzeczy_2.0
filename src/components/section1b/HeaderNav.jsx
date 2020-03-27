@@ -7,8 +7,8 @@ const Header = () => {
         <nav className="header">
             <ul>
                 <li>
-                    <Link to= "Section1b" title="Start"
-                      smooth={true} offset={0} duration={500} >Start</Link>
+                    <a href= "/" title="Start"
+                      smooth={true} offset={0} duration={500} >Start</a>
                 </li>
                 <li>
                     <Link to= "Section1d" title="O co chodzi?"

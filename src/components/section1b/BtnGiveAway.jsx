@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const BtnGiveAway = () => {
     return(
-        <button className="BtnGiveAway">Oddaj rzeczy</button>
+        <button className="BtnGiveAway"><Link to="/login">Oddaj rzeczy</Link></button>
     )
 }
 
