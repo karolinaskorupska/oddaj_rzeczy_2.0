@@ -41,16 +41,12 @@
             padding: 1rem 1.5rem;
             line-height: 24px;
             border: 0.75px solid transparent;
-
+            cursor: pointer;
             &:hover{
                 border: 0.75px solid $color5;
 
             }
 
-            a{
-                text-decoration: none;
-                color: $color5;
-            }
         }
     }
     .foundationDescription{

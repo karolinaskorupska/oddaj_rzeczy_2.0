@@ -4,7 +4,152 @@
           "bags":3,
           "organizations":2,
           "collections":20
-        }
+        },
+
+    "DataForSection1f": [
+      {
+        "name": "Fundacjom",
+        "description":"W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
+        "listOfFundations":[
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Dla dzieci",
+            "mission":"Pomoc dzieciom z ubogich rodzin",
+            "stuff":"ubrania, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Bez domu",
+            "mission":"Pomoc osobom nie posiadającym miejsca zamiszkania",
+            "stuff":"ubrania, jedzenie, ciepłe koce"
+          },
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          }
+        ]
+        
+      },
+      {
+        "name": "Organizacjom pozarządowym",
+        "description":"W naszej bazie znajdziesz listę zweryfikowanych Organizacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
+        "listOfFundations":[
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Dla dzieci",
+            "mission":"Pomoc dzieciom z ubogich rodzin",
+            "stuff":"ubrania, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Bez domu",
+            "mission":"Pomoc osobom nie posiadającym miejsca zamiszkania",
+            "stuff":"ubrania, jedzenie, ciepłe koce"
+          },
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          }
+        ]
+        
+      },
+      {
+        "name": "Lokalnym zbiórkom",
+        "description":"W naszej bazie znajdziesz listę zweryfikowanych Zbiórek, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
+        "listOfFundations":[
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Dla dzieci",
+            "mission":"Pomoc dzieciom z ubogich rodzin",
+            "stuff":"ubrania, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Bez domu",
+            "mission":"Pomoc osobom nie posiadającym miejsca zamiszkania",
+            "stuff":"ubrania, jedzenie, ciepłe koce"
+          },
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "nameOfFundation":"Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          }
+        ]
+        
+      }
+
+    ]
         
     
 

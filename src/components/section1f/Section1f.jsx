@@ -1,10 +1,27 @@
-import React from "react";
-
+import React,{useEffect,useState} from "react";
 import { Container, Row, Col } from "react-grid-system";
 import FoundationsList from "./FoundationsList";
 import ImgDecoration from "../../assets/Decoration.svg";
 
 const Section1f = () => {
+  const [list, setList] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:4000/DataForSection1f")
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
+        setList(data);
+      });
+  }, []);
+  const [fundations, setFundations] = useState(true);
+  const [organizations, setOrganizations] = useState(false);
+  const [collections, setCollections] = useState(false);
+  const fundationsData = list[0];
+  const organizationsData = list[1];
+  const collectionsData = list[2];
+  const {name, description, listOfFundations} = useState(fundationsData);
+  console.log(name)
   return (
     <div className="Section1f" id="Section1f">
       <Container fluid>
@@ -19,13 +36,23 @@ const Section1f = () => {
         <Row>
           <Col>
             <div className="foundationKind" id="foundation">
-              <h3><a href="">Fundacjom</a></h3>
-              <h3><a href="">Organizacjom <br></br>pozarządowym</a></h3>
-              <h3><a href="">Lokalnym <br></br>zbiórkom</a></h3>
+              <h3 onClick={()=> setFundations(!fundations)}>Fundacjom</h3>
+              <h3 onClick={()=> setOrganizations(!organizations)}>Organizacjom <br></br>pozarządowym</h3>
+              <h3 onClick={()=> setCollections(!collections)}>Lokalnym <br></br>zbiórkom</h3>
             </div>
           </Col>
         </Row>
-        <Row justify="center">
+        {setFundations && (
+          <Row justify="center">
+            <Col>
+              <div className="foundationDescription">
+                
+              </div>
+            </Col>
+          </Row>
+        )}
+
+        {/* <Row justify="center">
           <Col >
             <div className="foundationDescription">
               <p>
@@ -40,7 +67,7 @@ const Section1f = () => {
           <Col>
             <FoundationsList />
           </Col>
-        </Row>
+        </Row> */}
         <Row>
           <Col>
             <div className="pages">
