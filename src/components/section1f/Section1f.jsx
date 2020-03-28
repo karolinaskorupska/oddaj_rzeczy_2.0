@@ -17,11 +17,11 @@ const Section1f = () => {
   const [fundations, setFundations] = useState(true);
   const [organizations, setOrganizations] = useState(false);
   const [collections, setCollections] = useState(false);
-  const fundationsData = list[0];
-  const organizationsData = list[1];
-  const collectionsData = list[2];
-  const {name, description, listOfFundations} = useState(fundationsData);
-  console.log(name)
+  // const fundationsData = list[0];
+  // const organizationsData = list[1];
+  // const collectionsData = list[2];
+  // const {name, description, listOfFundations} = useState(fundationsData);
+  console.log(list)
   return (
     <div className="Section1f" id="Section1f">
       <Container fluid>
@@ -42,15 +42,6 @@ const Section1f = () => {
             </div>
           </Col>
         </Row>
-        {setFundations && (
-          <Row justify="center">
-            <Col>
-              <div className="foundationDescription">
-                
-              </div>
-            </Col>
-          </Row>
-        )}
 
         {/* <Row justify="center">
           <Col >

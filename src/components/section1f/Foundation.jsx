@@ -1,18 +1,35 @@
-import React from "react";
+import React, {Component} from "react";
 
 
-const Foundation=()=>{
-    return(
-        <div className="foundation">    
-            <div className="leftSide">
-                <h4 className="foundationName">Fundacja "Dbam o Zdrowie"</h4>
-                <p className="foundationMission">Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej</p>
+class Foundation extends Component{
+    
+    state={
+        element:this.props.element,
+        name: this.props.element.name,
+        mission: this.props.element.mission,
+        stuff: this.props.element.stuff
+        
+    }
+    
+
+    render(){
+        const{element,name, mission, stuff}=this.state;
+        console.log(element)
+        return(
+            <li>
+            <div className="foundation">    
+                <div className="leftSide">
+                    <h4 className="foundationName">Fundacja {name}</h4>
+                    <p className="foundationMission">Cel i misja: {mission}</p>
+                </div>
+                <div className="rightSide">
+                    <p className="needs">{stuff}</p>
+                </div>
             </div>
-            <div className="rightSide">
-                <p className="needs">ubrania, jedzenie, sprzęt AGD, meble, zabawki</p>
-            </div>
-        </div>
-    )
+            </li>
+        )
+    }
 }
+
 
 export default Foundation;
