@@ -1,5 +1,5 @@
 
-.Login{
+.Logout{
     padding-top: 2rem;
     padding-right: 4rem;
     width: 100%;
@@ -63,9 +63,9 @@
         }
     }
 
-    .Section2a{
+    .Section4a{
         overflow-x: hidden;
-        padding-top:2rem;
+        padding-top:4rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -81,42 +81,19 @@
             margin:2rem 0;
         }
 
-        .LoginBox{
-            background-color: $color1;
-            width: 20rem;
-            height: 15rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-bottom:2rem;
+        .BtnHome{
+            background-color: transparent;
+            border: 0.75px solid #3C3C3C;
+            padding: 1rem 2rem;
+            text-align: center;
+            font-weight: 300;
+            font-family: $font-base;
+            font-size: 18px;
+            color: $color5;
 
-            .Email, .Password{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-                padding:1rem;
-                border-bottom: 0.75px solid $color5;
-                label{
-                    padding-bottom: 0.5rem;
-                    font-family: $font-base;
-                    font-weight: 800;
-                    font-size: 16px;
-                    color: $color5;
-                }
-                input{
-                    background-color: transparent;
-                    color: $color5;
-                    border: none;
-                }
-            }
-            .logAndReg{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                padding:1rem;
+            a{
+                color: $color5;
+                text-decoration: none;
             }
         }
     }

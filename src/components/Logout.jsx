@@ -1,13 +1,13 @@
 import React from "react";
 import LogAndReg from "./section1b/LogAndReg";
 import HeaderNav from "./section1b/HeaderNav";
-import Section2a from "./section2a/Section2a";
+import Section4a from "./section4a/Section4a";
 import { Container, Row, Col } from "react-grid-system";
 
-const Login = () => {
+const Logout = () => {
   return (
     <Container fluid style={{ margin: 0, padding: 0 }}>
-      <div className="Login">
+      <div className="Logout">
         <Row align="center" justify="end">
           <Col  xl={4}>
             <LogAndReg />
@@ -20,11 +20,11 @@ const Login = () => {
         </Row>
         <Row>
           <Col>
-            <Section2a />
+            <Section4a />
           </Col>
         </Row>
       </div>
     </Container>
   );
 };
-export default Login;
+export default Logout;
