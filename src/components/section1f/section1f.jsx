@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-grid-system";
-import FoundationsList from "./FoundationsList";
 import ImgDecoration from "../../assets/Decoration.svg";
 
-class Section1f2 extends Component {
+class Section1f extends Component {
   state = {
     description: "",
     list: [],
@@ -48,7 +47,6 @@ class Section1f2 extends Component {
           description: data.description,
           list: data.list
         });
-        console.log(data.list)
       });
   };
 
@@ -89,7 +87,27 @@ class Section1f2 extends Component {
           </Row>
           <Row>
             <Col>
-              <FoundationsList list={list} />
+              <div className="foundationsList">
+                <ul>
+                  {list.map((element, index) => {
+                    return (
+                      <li key={index}>
+                        <div className="foundation">
+                          <div className="leftSide">
+                            <h4 className="foundationName">{element.name}</h4>
+                            <p className="foundationMission">
+                              Cel i misja: {element.mission}
+                            </p>
+                          </div>
+                          <div className="rightSide">
+                            <p className="needs">{element.stuff}</p>
+                          </div>
+                        </div>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
             </Col>
           </Row>
           <Row>
@@ -107,4 +125,4 @@ class Section1f2 extends Component {
   }
 }
 
-export default Section1f2;
+export default Section1f;
