@@ -24,6 +24,10 @@
             &:hover{
                 border: 1px solid $color3;
             }
+            a{
+                color: $color5;
+                text-decoration: none;
+            }
         }
     }
     nav{
