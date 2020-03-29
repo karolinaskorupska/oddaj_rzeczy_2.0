@@ -14,12 +14,12 @@ class Foundation extends Component{
 
     render(){
         const{element,name, mission, stuff}=this.state;
-        console.log(element)
+        // console.log(element)
         return(
             <li>
             <div className="foundation">    
                 <div className="leftSide">
-                    <h4 className="foundationName">Fundacja {name}</h4>
+                    <h4 className="foundationName">{name}</h4>
                     <p className="foundationMission">Cel i misja: {mission}</p>
                 </div>
                 <div className="rightSide">
