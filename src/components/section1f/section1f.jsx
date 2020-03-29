@@ -49,9 +49,51 @@ class Section1f extends Component {
         });
       });
   };
-
+  handleClick=event=>{
+    this.setState({
+      currentPage: Number(event.target.id)
+    })
+  }
   render() {
-    const { description, list } = this.state;
+    const { description, list, currentPage, itemsPerPage } = this.state;
+   
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const currentItems= list.slice(indexOfFirstItem, indexOfLastItem);
+    const renderItems = currentItems.map((element, index) => {
+      return (
+        <li key={index}>
+          <div className="foundation">
+            <div className="leftSide">
+              <h4 className="foundationName">{element.name}</h4>
+              <p className="foundationMission">
+                Cel i misja: {element.mission}
+              </p>
+            </div>
+            <div className="rightSide">
+              <p className="needs">{element.stuff}</p>
+            </div>
+          </div>
+        </li>
+      );
+    });
+
+    
+    const pageNumbers=[];
+    for(let i=1;i<=Math.ceil(list.length/itemsPerPage);i++){
+      pageNumbers.push(i);
+    };
+    const renderPageNumbers= pageNumbers.map(number=>{
+      return(
+        <p
+        key={number}
+        id={number}
+        onClick={this.handleClick}
+        >
+          {number}
+        </p>
+      )
+    })
     return (
       <div className="Section1f" id="Section1f">
         <Container fluid>
@@ -89,23 +131,7 @@ class Section1f extends Component {
             <Col>
               <div className="foundationsList">
                 <ul>
-                  {list.map((element, index) => {
-                    return (
-                      <li key={index}>
-                        <div className="foundation">
-                          <div className="leftSide">
-                            <h4 className="foundationName">{element.name}</h4>
-                            <p className="foundationMission">
-                              Cel i misja: {element.mission}
-                            </p>
-                          </div>
-                          <div className="rightSide">
-                            <p className="needs">{element.stuff}</p>
-                          </div>
-                        </div>
-                      </li>
-                    );
-                  })}
+                  {renderItems}
                 </ul>
               </div>
             </Col>
@@ -113,9 +139,7 @@ class Section1f extends Component {
           <Row>
             <Col>
               <div className="pages">
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
+                {renderPageNumbers}
               </div>
             </Col>
           </Row>

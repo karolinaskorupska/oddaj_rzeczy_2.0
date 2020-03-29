@@ -64,6 +64,7 @@
             color: $color5;
             letter-spacing: 0;
             width: 40%;
+            
         }
     }
     .foundationsList{
@@ -139,6 +140,7 @@
           padding: 0.5rem;  
           padding:1rem;
           border: 0.75px solid transparent;
+          cursor: pointer;
 
           &:hover{
               border: 0.75px solid #707070;
