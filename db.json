@@ -152,8 +152,12 @@
         
       }
 
-    ]
+    ],
         
-    
+    "LoginData":
+      {
+        "email":"abc@xyz.pl",
+        "password":"1234567"
+      }
 
 }
