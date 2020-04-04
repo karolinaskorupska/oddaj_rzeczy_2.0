@@ -4,7 +4,7 @@ import ImgDecoration from "../../assets/Decoration.svg";
 import LoginBox from "./LoginBox";
 // import ButtonLogin from '../section1b/ButtonLogin';
 // import ButtonRegister from '../section1b/ButtonRegister';
-import LogAndReg from "../section1b/LogAndReg";
+import ButtonRegister from "../section1b/ButtonRegister";
 
 const Section2a = () => {
   return (
@@ -13,7 +13,7 @@ const Section2a = () => {
       <img src={ImgDecoration} alt="ImgDecoration"></img>
       <LoginBox />
 
-      <LogAndReg />
+      <ButtonRegister />
     </div>
   );
 };

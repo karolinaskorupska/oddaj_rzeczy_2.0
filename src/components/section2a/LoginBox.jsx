@@ -1,5 +1,21 @@
 import React, { Component } from "react";
 
+import * as firebase from 'firebase';
+
+const firebaseConfig = {
+  apiKey: " AIzaSyAYtKfB6EWLGdEge2bmMmvh1i7s4pnGVtc ",
+  authDomain: "oddaj-rzeczy-2.firebaseapp.com",
+  databaseURL: "https://oddaj-rzeczy-2.firebaseio.com",
+  projectId: "oddaj-rzeczy-2",
+  storageBucket: "oddaj-rzeczy-2.appspot.com",
+  messagingSenderId: "59158629530",
+  appId: "1:59158629530:web:60c5ecf4acf5af9ab02323"
+};
+
+firebase.initializeApp(firebaseConfig);
+
+
+
 class LoginBox extends Component {
   state = {
     email: "",
@@ -43,11 +59,21 @@ class LoginBox extends Component {
     return isPasswordValid;
   };
 
+  handleSubmit=event=>{
+    event.preventDefault();
+    const {email, password} = this.state;
+    const auth = firebase.auth();
+
+    const promise =  auth.signInWithEmailAndPassword(email, password);
+    promise.catch(event => console.log(event.message))
+  }
+
 
   render() {
     const { email, password,  emailError, passwordError } = this.state;
 
     return (
+      <>
       <div className="LoginBox">
         <div className="Email">
           <label>Email</label>
@@ -74,6 +100,8 @@ class LoginBox extends Component {
               <span className="errorMessage">{passwordError}</span>
             )}
       </div>
+      <button className="Submit" onClick={this.handleSubmit}>Zaloguj</button>
+      </>
     );
   }
 }

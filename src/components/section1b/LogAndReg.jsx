@@ -1,14 +1,24 @@
-import React from "react";
+import React, {Component} from "react";
 import ButtonLogin from './ButtonLogin';
 import ButtonRegister from './ButtonRegister';
+// import ButtonLogOut from '../../ButtonLogOut';
 
-const LogAndReg = () => {
-  return (
-    <div className="logAndReg">
-      <ButtonLogin />
-      <ButtonRegister />
-    </div>
-  );
-};
+
+class LogAndReg extends Component {
+  
+
+  render(){
+    return (
+      <div className="logAndReg">
+        <ButtonLogin />
+        
+        <ButtonRegister />
+      </div>
+    );
+  }
+
+
+}
+
 
 export default LogAndReg;
