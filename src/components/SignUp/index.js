@@ -1,9 +1,87 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
+import * as ROUTES from '../../constans/routes';
  
-const App = () => (
+const SignUpPage = () => (
   <div>
-    <h1>App</h1>
+    <h1>Sign up page</h1>
+    <SignUpForm />
   </div>
 );
+
+const INITIAL_STATE = {
+  username: '',
+  email: '',
+  passwordOne: '',
+  passwordTwo:'',
+  error: null
+};
+
+class SignUpForm extends Component{
+  // eslint-disable-next-line no-useless-constructor
+  constructor(props){
+    super(props);
+
+    this.state = { ...INITIAL_STATE};
+  }
+
+  onSubmit = event => {}
+
+  onChange = event => {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+  }
+
+  render(){
+    const { username, email, passwordOne, passwordTwo, error }= this.state;
+
+    return (
+      <form onSubmit={this.onSubmit}>
+        <input
+        name="username"
+        value={username}
+        onChange={this.onChange}
+        type="text"
+        placeholder="username"
+        />
+        <input
+        name="email"
+        value={email}
+        onChange={this.onChange}
+        type="text"
+        placeholder="email"
+        />
+        <input
+        name="passwordOne"
+        value={passwordOne}
+        onChange={this.onChange}
+        type="password"
+        placeholder="password"
+        />
+        <input
+        name="passwordTwo"
+        value={passwordTwo}
+        onChange={this.onChange}
+        type="password"
+        placeholder="confirm password"
+        />
+
+        <button type="submit">Zarejestruj</button>
+
+        {error && <p>{error.message}</p>}
+
+      </form>
+    );
+  }
+}
  
-export default App;
+const SignUpLink = () => (
+<Link to={ROUTES.SIGN_UP} > Zarejestruj </Link>
+);
+
+
+export default SignUpPage;
+
+export { SignUpForm, SignUpLink };
