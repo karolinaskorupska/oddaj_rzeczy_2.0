@@ -1,0 +1,124 @@
+body {
+  font-family: "Merriweather";
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+
+  .landing {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: url("../../assets/Home-Hero-Image.jpg");
+    background-position-x: -30rem;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    padding-top: 2rem;
+    padding-bottom: 18rem;
+    padding-right: 2rem;
+
+    .logAndReg {
+      display: flex;
+      flex-direction: row;
+      padding-right: 4rem;
+      justify-content: flex-end;
+
+      li {
+        width: 7rem;
+        font-family: "Open Sans";
+        font-size: 14px;
+        color: #3c3c3c;
+        border: none;
+        background-color: transparent;
+        padding: 0.5rem 1rem;
+        font-weight: 200;
+        border: 1px solid transparent;
+        text-align: center;
+
+        &:hover {
+          border: 1px solid #fad648;
+        }
+        a {
+          color: #3c3c3c;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .menu {
+      padding-top: 2rem;
+      width: 100%;
+      padding-right: 4rem;
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        li {
+          display: block;
+
+          a {
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            color: #3c3c3c;
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            font-family: "Open Sans";
+            letter-spacing: 0;
+            border: 0.75px solid rgba(0, 0, 0, 0);
+            cursor: pointer;
+
+            &:hover {
+              border-color: #737373;
+            }
+          }
+        }
+      }
+    }
+
+    .txt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 12rem;
+      width: 100%;
+      padding-right: 4rem;
+
+      h1 {
+        text-align: center;
+        color: #3c3c3c;
+        font-size: 38px;
+        letter-spacing: -0.76px;
+      }
+      img {
+        margin-top: 3%;
+      }
+      .headerButtons {
+        padding-top: 4rem;
+        display: flex;
+        flex-direction: row;
+
+        button {
+          text-align: center;
+          font-weight: 200;
+          font-size: 36px;
+          text-transform: uppercase;
+          border: 0.75px solid #737373;
+          padding: 1rem 3rem;
+          background-color: transparent;
+          width: 18rem;
+          margin: 0 1rem;
+
+          a {
+            color: #3c3c3c;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
