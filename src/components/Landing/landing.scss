@@ -5,9 +5,8 @@ body {
   width: 100vw;
   overflow-x: hidden;
 
-  .landing {
+  .banner {
     height: 100vh;
-
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -17,14 +16,15 @@ body {
     background-repeat: no-repeat;
     overflow-x: hidden;
     padding-top: 2rem;
-    padding-bottom: 18rem;
+    // padding-bottom: 18rem;
     padding-right: 2rem;
 
     .logAndReg {
       display: flex;
       flex-direction: row;
-      padding-right: 4rem;
+      padding-right: 2rem;
       justify-content: flex-end;
+      
 
       li {
         width: 7rem;
@@ -51,7 +51,7 @@ body {
     .menu {
       padding-top: 2rem;
       width: 100%;
-      padding-right: 4rem;
+      padding-right: 2rem;
       ul {
         display: flex;
         flex-direction: row;
@@ -119,6 +119,42 @@ body {
           }
         }
       }
+    }
+  }
+
+  .Stats{
+    background-color: #FAD648;
+    width: 100%;
+    
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:10%;
+
+        .number{
+            font-weight: 300;
+            font-size: 90px;
+            color: #5E5322;
+        }
+        .title{
+           padding-top: 1rem;
+            font-weight: 400;
+            font-size: 18px;
+            color: #5E5322;
+            letter-spacing: -0.36px;
+            text-transform: uppercase;
+        }
+        .description{
+           padding-top:1rem;
+            text-align: center;
+            font-weight: 300;
+            color: #5E5322;
+            letter-spacing: -0.32px;
+            font-size: 16px;
+            padding-bottom: 3rem;
+        }
     }
   }
 }

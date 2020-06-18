@@ -8,14 +8,16 @@ import ImgDecoration from '../../assets/Decoration.svg';
 import Navigation from "../Navigation";
 import Menu from "../Menu";
 import '../Landing/landing.scss'
+import Stats from '../Stats';
 
 const Landing = () => (
   <Container fluid style={{ margin: 0, padding: 0 }}>
     <div className="landing">
+    <div className="banner">
       <Row>
         <Col>
           <header>
-            <div className="banner">
+            
               <Navigation />
               <Menu />
 
@@ -27,10 +29,13 @@ const Landing = () => (
                   <button className="BtnOrganize"><Link to="/login">Zorganizuj zbiórkę</Link></button>
                 </div>
               </div>
-            </div>
+            
           </header>
         </Col>
       </Row>
+      </div>
+    <Stats/>
+
     </div>
   </Container>
 );
