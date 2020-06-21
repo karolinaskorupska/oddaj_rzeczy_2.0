@@ -157,4 +157,96 @@ body {
         }
     }
   }
+
+  .Steps{
+
+    .stepsHeader{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+            text-align: center;
+            font-weight: 400;
+            font-size: 38px;
+            font-family: 14px;
+            color: #3C3C3C;
+        }
+        img{
+            padding-top: 1.5rem;
+            display: block;
+        }
+    }
+    .stepsImages{
+        width: 100%;
+        background-color: #F0F1F1;;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        
+        .step{
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h3{
+                padding-top: 1rem;
+                font-size: 18px;
+                font-weight: 400;
+                font-family: 14px;
+                color: #3C3C3C;
+                letter-spacing: 0;
+            }
+
+            div{
+                margin-top: 1rem;
+                width: 5rem;
+                height: 1px;
+                background-color: #3C3C3C;
+                display: block;
+                
+            }
+            p{
+                text-align: center;
+                font-size: 16px;
+                font-family: 14px;
+                color: #3C3C3C;
+                font-weight: 400;
+                padding-top: 1rem;
+                width: 10rem;
+            }
+        }
+    }
+    .StepsButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3em;
+
+        button{
+            border: 0.75px solid #3C3C3C;
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            font-family: 14px;
+            font-size: 36px;
+            letter-spacing: 0;
+            color: #3C3C3C;
+            background-color: white;
+            font-weight: 300;
+
+            a{ 
+                color: #3C3C3C;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 }

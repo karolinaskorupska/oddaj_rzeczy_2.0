@@ -5,10 +5,11 @@ import { Link } from 'react-router-dom';
 
 import ImgDecoration from '../../assets/Decoration.svg';
 
+import '../Landing/landing.scss';
 import Navigation from "../Navigation";
 import Menu from "../Menu";
-import '../Landing/landing.scss'
 import Stats from '../Stats';
+import Steps from '../Steps';
 
 const Landing = () => (
   <Container fluid style={{ margin: 0, padding: 0 }}>
@@ -35,7 +36,7 @@ const Landing = () => (
       </Row>
       </div>
     <Stats/>
-
+    <Steps/>
     </div>
   </Container>
 );
