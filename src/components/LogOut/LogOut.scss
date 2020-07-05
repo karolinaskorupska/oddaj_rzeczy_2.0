@@ -1,0 +1,39 @@
+
+
+    .LogOutPage{
+        overflow-x: hidden;
+        padding-top:4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        h1{
+            text-align: center;
+            color: $color5;
+            font-size: 38px;
+            letter-spacing: -0.76px;
+        }
+        img{
+            margin:2rem 0;
+        }
+
+        .BtnHome{
+            background-color: transparent;
+            border: 0.75px solid #3C3C3C;
+            padding: 1rem 2rem;
+            text-align: center;
+            font-weight: 300;
+            font-family: $font-base;
+            font-size: 18px;
+            color: $color5;
+
+            a{
+                color: $color5;
+                text-decoration: none;
+            }
+        }
+    }
+
+
+}

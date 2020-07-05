@@ -3,8 +3,8 @@ import { withRouter } from "react-router-dom";
 import { compose } from "recompose";
 import { Link } from "react-router-dom";
 
-import { SignUpLink } from "../SignUp";
-import { PasswordForgetLink } from "../PasswordForget";
+/* import { SignUpLink } from "../SignUp";
+import { PasswordForgetLink } from "../PasswordForget"; */
 import { withFirebase } from "../Firebase";
 import * as ROUTES from "../../constans/routes";
 
@@ -43,7 +43,7 @@ class SignInFormBase extends Component {
       .doSignInWithEmailAndPassword(email, password)
       .then(() => {
         this.setState({ ...INITIAL_STATE });
-        this.props.history.push(ROUTES.HOME);
+        this.props.history.push(ROUTES.LANDING);
       })
       .catch((error) => {
         this.setState({ error });
@@ -132,10 +132,7 @@ class SignInFormBase extends Component {
               Zaloguj się
             </button>
 
-            </div>
-
-
-            
+            </div>  
               
             {error && <p className="errorMessage">{error.message}</p>}
       </div>

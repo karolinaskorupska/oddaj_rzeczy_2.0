@@ -20,8 +20,8 @@ const Navigation = () => (
 
 const NavigationAuth = ({ authUser }) => (
   <ul className="logAndReg">
-    <li>
-      <Link to={ROUTES.LANDING}>Strona główna {authUser.email} </Link>
+    <li className="usersEmail">
+      <Link  to={ROUTES.LANDING}>{authUser.email} </Link>
     </li>
     <li>
       <Link to={ROUTES.LANDING}> Oddaj rzeczy </Link>

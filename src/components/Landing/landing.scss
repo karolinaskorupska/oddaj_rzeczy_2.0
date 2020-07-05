@@ -24,28 +24,50 @@ body {
       flex-direction: row;
       padding-right: 2rem;
       justify-content: flex-end;
+      align-items: center;
       
 
       li {
-        width: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-family: "Open Sans";
         font-size: 14px;
         color: #3c3c3c;
-        border: none;
         background-color: transparent;
-        padding: 0.5rem 1rem;
         font-weight: 200;
         border: 1px solid transparent;
         text-align: center;
-
+        width: 7rem;
+        height: 2rem;
+        margin:0 1rem;
+        
         &:hover {
           border: 1px solid #fad648;
+          
         }
         a {
           color: #3c3c3c;
           text-decoration: none;
+          display: block;
+        }
+        button{
+            background-color: transparent;
+            border: 1px solid transparent;
+            font-weight: 200;
+            color: #3C3C3C;
         }
       }
+      li.usersEmail{
+        border: 1px solid transparent;
+        margin: 0 2rem;
+        font-weight: 600;
+        &:hover {
+            border: 1px solid transparent;
+          }
+        }
+
+
     }
 
     .menu {
