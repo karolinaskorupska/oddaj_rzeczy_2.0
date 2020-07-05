@@ -1,0 +1,163 @@
+{ 
+    "DataForStats": 
+        {
+          "bags":3,
+          "organizations":2,
+          "collections":20
+        },
+
+    "DataForTarget": [
+      {
+        "id":1,
+        "name": "Fundacje",
+        "description":"W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
+        "list":[
+          {
+            "name":"Fundacja Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "name":"Fundacja Dla dzieci",
+            "mission":"Pomoc dzieciom z ubogich rodzin",
+            "stuff":"ubrania, meble, zabawki"
+          },
+          {
+            "name":" Fundacja Bez domu",
+            "mission":"Pomoc osobom nie posiadającym miejsca zamiszkania",
+            "stuff":"ubrania, jedzenie, ciepłe koce"
+          },
+          {
+            "name":" Fundacja Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "name":" Fundacja Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "name":"Fundacja Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "name":"Fundacja Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "name":"Fundacja Dbam o zdrowie",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          }
+        ]
+        
+      },
+      {
+        "id":2,
+        "name": "Organizacjom pozarządowym",
+        "description":"W naszej bazie znajdziesz listę zweryfikowanych Organizacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
+        "list":[
+          {
+            "name":"Organizacja pozarządowa1",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "name":"Organizacja pozarządowa2",
+            "mission":"Pomoc dzieciom z ubogich rodzin",
+            "stuff":"ubrania, meble, zabawki"
+          },
+          {
+            "name":"Organizacja pozarządowa3",
+            "mission":"Pomoc osobom nie posiadającym miejsca zamiszkania",
+            "stuff":"ubrania, jedzenie, ciepłe koce"
+          },
+          {
+            "name":"Organizacja pozarządowa4",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "name":"Organizacja pozarządowa5",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "name":"Organizacja pozarządowa6",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "name":"Organizacja pozarządowa7",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "name":"Organizacja pozarządowa8",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          }
+        ]
+        
+      },
+      {
+        "id":3,
+        "name": "Lokalnym zbiórkom",
+        "description":"W naszej bazie znajdziesz listę zweryfikowanych Zbiórek, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
+        "list":[
+          {
+            "name":"Zbiórka 1",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "name":"Zbiórka 2",
+            "mission":"Pomoc dzieciom z ubogich rodzin",
+            "stuff":"ubrania, meble, zabawki"
+          },
+          {
+            "name":"Zbiórka 3",
+            "mission":"Pomoc osobom nie posiadającym miejsca zamiszkania",
+            "stuff":"ubrania, jedzenie, ciepłe koce"
+          },
+          {
+            "name":"Zbiórka 4",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "name":"Zbiórka 5",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "name":"Zbiórka 6",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "name":"Zbiórka 7",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          },
+          {
+            "name":"Zbiórka 8",
+            "mission":"Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "stuff":"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          }
+        ]
+        
+      }
+
+    ],
+        
+    "LoginData":
+      {
+        "email":"abc@xyz.pl",
+        "password":"1234567"
+      }
+
+}

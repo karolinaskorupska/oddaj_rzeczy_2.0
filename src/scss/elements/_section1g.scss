@@ -1,0 +1,164 @@
+.Section1g{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+
+    &::after{
+        content: "";
+        background-image: url("../../assets/Background-Contact-Form.jpg");
+        background-position-x: 30% ;
+        opacity: 0.5;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .txtBox{
+        width: 100%;
+        padding-top: 10rem ;
+        padding-right: 4rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            text-align: center;
+            font-size: 38px;
+            font-weight: 400;
+            letter-spacing: -0.76px;
+            color: $color5;
+            font-family: $font-base;
+        }
+        img{
+            padding: 1.5rem 0;
+        }
+
+        .form{
+            padding-top:2rem;
+            padding-bottom: 20rem;
+            form{
+                position: relative;
+                .personalData{
+                    display: flex;
+                    flex-direction: row;
+                    padding-bottom: 2rem;
+
+                    .name, .email{
+                        display: flex;
+                        flex-direction: column;
+                        border-bottom: 0.75px solid gray;
+                        margin: 0 0.5rem;
+                    }
+
+                    label, input{
+                        display: block;
+
+                    }
+                    label{
+                        font-weight: 800;
+                        font-size: 16px;
+                        font-family: $font-base;
+                        color:$color5;
+                        letter-spacing: 0;
+                        padding-bottom: 0.5rem;
+                    }
+                    input {
+                        padding:0.2rem;
+                        color: #3C3C3C26;
+                        font-weight: 400;
+                        font-size: 18px;
+                        font-family: $font-base;
+                        letter-spacing: 0;
+                        background-color: transparent;
+                        border: 0.75px solid transparent;
+
+                        &:focus{
+                            border: 0.75px solid $color3;
+                        }
+                        &[type="email"], &[type="text"]{
+                            color: $color5;
+                        }
+                        
+                    }
+                }
+                .textarea{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 0.5rem;
+                    border-bottom: 0.75px solid gray;
+
+                    label, textarea{
+                        display: block;
+                    }
+                    label{
+                        font-weight: 800;
+                        font-size: 16px;
+                        font-family: $font-base;
+                        color:$color5;
+                        letter-spacing: 0;
+                        padding-bottom: 0.5rem;
+                    }
+                    textarea {
+                        color: #3C3C3C26;
+                        font-weight: 400;
+                        font-size: 18px;
+                        font-family: $font-base;
+                        letter-spacing: 0;
+                        background-color: transparent;
+                        border: none;
+                        width: 100%;
+                        height: auto;
+                        resize: none;
+                        border: 0.75px solid transparent;
+                        padding:0.2rem;
+                        &:focus{
+                            border: 0.75px solid $color3;
+                        }
+                        &[type="text"]{
+                            color: $color5;
+                        }
+                    }
+                }
+            }
+            button.submit{
+                font-weight: 300;
+                font-size: 18px;
+                font-family: $font-base;
+                letter-spacing: 0;
+                color: #000000;
+                background-color: transparent;
+                padding: 1rem 2rem;
+                border:0.75px solid $color5 ;
+                position: absolute;
+                right: 0;
+                margin: 2rem 3rem;
+            }
+        }
+    }
+   
+}
+.AlertSent{
+    font-family: $font-base;
+    font-weight: 800;
+    color: green;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+}
+.errorMessage{
+    font-family: $font-base;
+    font-weight: 800;
+    color: red;
+    font-size: 14px;
+    display: inline-block;
+    text-align: start;
+    padding:0.5rem;
+}

@@ -1,12 +1,11 @@
 import React from 'react';
-import './scss/main.scss';
-
-function App() {
-  return (
-    <div className="App">
-      <h1>Działa</h1>
-    </div>
-  );
-}
-
-export default App;
+import ReactDOM from 'react-dom';
+ 
+import './index.css';
+import * as serviceWorker from './serviceWorker';
+ 
+import App from './components/App';
+ 
+ReactDOM.render(<App />, document.getElementById('root'));
+ 
+serviceWorker.unregister();

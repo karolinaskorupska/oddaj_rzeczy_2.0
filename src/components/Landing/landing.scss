@@ -1,0 +1,647 @@
+body {
+  font-family: "Merriweather";
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+
+  .banner {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: url("../../assets/Home-Hero-Image.jpg");
+    background-position-x: -30rem;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    padding-top: 2rem;
+    // padding-bottom: 18rem;
+    padding-right: 2rem;
+
+    .logAndReg {
+      display: flex;
+      flex-direction: row;
+      padding-right: 2rem;
+      justify-content: flex-end;
+      align-items: center;
+      
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Open Sans";
+        font-size: 14px;
+        color: #3c3c3c;
+        background-color: transparent;
+        font-weight: 200;
+        border: 1px solid transparent;
+        text-align: center;
+        width: 7rem;
+        height: 2rem;
+        margin:0 1rem;
+        
+        &:hover {
+          border: 1px solid #fad648;
+          
+        }
+        a {
+          color: #3c3c3c;
+          text-decoration: none;
+          display: block;
+        }
+        button{
+            background-color: transparent;
+            border: 1px solid transparent;
+            font-weight: 200;
+            color: #3C3C3C;
+        }
+      }
+      li.usersEmail{
+        border: 1px solid transparent;
+        margin: 0 2rem;
+        font-weight: 600;
+        &:hover {
+            border: 1px solid transparent;
+          }
+        }
+
+
+    }
+
+    .menu {
+      padding-top: 2rem;
+      width: 100%;
+      padding-right: 2rem;
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        li {
+          display: block;
+
+          a {
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            color: #3c3c3c;
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            font-family: "Open Sans";
+            letter-spacing: 0;
+            border: 0.75px solid rgba(0, 0, 0, 0);
+            cursor: pointer;
+
+            &:hover {
+              border-color: #737373;
+            }
+          }
+        }
+      }
+    }
+
+    .txt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 12rem;
+      width: 100%;
+      padding-right: 4rem;
+
+      h1 {
+        text-align: center;
+        color: #3c3c3c;
+        font-size: 38px;
+        letter-spacing: -0.76px;
+      }
+      img {
+        margin-top: 3%;
+      }
+      .headerButtons {
+        padding-top: 4rem;
+        display: flex;
+        flex-direction: row;
+
+        button {
+          text-align: center;
+          font-weight: 200;
+          font-size: 36px;
+          text-transform: uppercase;
+          border: 0.75px solid #737373;
+          padding: 1rem 3rem;
+          background-color: transparent;
+          width: 18rem;
+          margin: 0 1rem;
+
+          a {
+            color: #3c3c3c;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .Stats{
+    background-color: #FAD648;
+    width: 100%;
+    
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:10%;
+
+        .number{
+            font-weight: 300;
+            font-size: 90px;
+            color: #5E5322;
+        }
+        .title{
+           padding-top: 1rem;
+            font-weight: 400;
+            font-size: 18px;
+            color: #5E5322;
+            letter-spacing: -0.36px;
+            text-transform: uppercase;
+        }
+        .description{
+           padding-top:1rem;
+            text-align: center;
+            font-weight: 300;
+            color: #5E5322;
+            letter-spacing: -0.32px;
+            font-size: 16px;
+            padding-bottom: 3rem;
+        }
+    }
+  }
+
+  .Steps{
+
+    .stepsHeader{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+            text-align: center;
+            font-weight: 400;
+            font-size: 38px;
+            font-family: 14px;
+            color: #3C3C3C;
+        }
+        img{
+            padding-top: 1.5rem;
+            display: block;
+        }
+    }
+    .stepsImages{
+        width: 100%;
+        background-color: #F0F1F1;;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        
+        .step{
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h3{
+                padding-top: 1rem;
+                font-size: 18px;
+                font-weight: 400;
+                font-family: 14px;
+                color: #3C3C3C;
+                letter-spacing: 0;
+            }
+
+            div{
+                margin-top: 1rem;
+                width: 5rem;
+                height: 1px;
+                background-color: #3C3C3C;
+                display: block;
+                
+            }
+            p{
+                text-align: center;
+                font-size: 16px;
+                font-family: 14px;
+                color: #3C3C3C;
+                font-weight: 400;
+                padding-top: 1rem;
+                width: 10rem;
+            }
+        }
+    }
+    .StepsButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3em;
+
+        button{
+            border: 0.75px solid #3C3C3C;
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            font-family: 14px;
+            font-size: 36px;
+            letter-spacing: 0;
+            color: #3C3C3C;
+            background-color: white;
+            font-weight: 300;
+
+            a{ 
+                color: #3C3C3C;
+                text-decoration: none;
+            }
+        }
+    }
+  }
+
+  .AboutUs{
+    background-color: #F0F1F1;   
+
+    .TxtBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left:10%;
+        width: 80%;
+        height: 100vh;
+
+        .AboutUsInfo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2{
+                text-align: center;
+                font-size: 38px;
+                font-weight: 400;
+                letter-spacing: -0.76px;
+                color: #3C3C3C;
+                font-family: 14px;
+            }
+            img{
+                padding:1.5rem 0;
+            }
+            p{
+                
+                text-align: center;
+                font-family: 14px;
+                font-size: 30px;
+                letter-spacing: -0.6px;
+                color: #3C3C3C;
+                font-weight: 400;
+            }
+        }
+        img.signature{
+            width: 12rem;
+            padding-top: 3rem;
+            align-self: flex-end;
+        }
+    }
+    .imgPeople{
+        background-image: url("../../assets/People.jpg");
+        background-size: cover;
+        background-position-x: 35%;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    
+    }
+  }
+
+  .Target{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+
+    .foundationHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        padding-top:4rem;
+
+        h2{
+            text-align: center;
+            font-size: 38px;
+            font-weight: 400;
+            letter-spacing: -0.76px;
+            color: #3C3C3C;
+            font-family: 'Open Sans';
+        }
+        img{
+            padding:1.5rem 0;
+        }
+    }
+    .foundationKind{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        h3{
+            text-align: center;
+            padding-top: 1rem;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 14px;
+            color: #3C3C3C;
+            letter-spacing: 0;
+            padding: 1rem 1.5rem;
+            line-height: 24px;
+            border: 0.75px solid transparent;
+            cursor: pointer;
+            &:hover{
+                border: 0.75px solid #3C3C3C;
+
+            }
+
+        }
+    }
+    .foundationDescription{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        padding: 2rem 0;
+        p{
+            text-align: center;
+            font-weight: 400;
+            font-size: 22px;
+            font-family: 14px;
+            color: 3C3C3C;
+            letter-spacing: 0;
+            width: 40%;
+            
+        }
+    }
+    .foundationsList{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-self: center;
+        width: 100%;
+        padding: 2rem 0;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: space-between;
+
+            li{
+                border-bottom: 1px solid #707070;
+                padding: 1rem 0;
+                padding: 1rem 0;
+                .foundation{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    .leftSide{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: start;
+                        align-content: center;
+                        padding-right: 40%;
+                        h4{
+                            text-align: left;
+                            font-weight: 200;
+                            font-size: 26px;
+                            font-family: 14px;
+                            color: 3C3C3C;
+                            
+                        }
+                        p{
+                            text-align: left;
+                            font-weight: 200;
+                            font-size: 18px;
+                            font-family: 14px;
+                            color: 3C3C3C;
+                            padding-top: 0.5rem;
+                        }
+                    }
+                    .rightSide{
+                            text-align: left;
+                            font-weight: 200;
+                            font-size: 18px;
+                            font-family: 14px;
+                            color: #3C3C3C;
+                    }
+
+                }
+            }
+        }
+    }
+    .pages{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+
+        p{
+          font-weight: 400;
+          font-size: 18px;
+          color:3C3C3C;
+          font-family: 14px;
+          padding: 0.5rem;  
+          padding:1rem;
+          border: 0.75px solid transparent;
+          cursor: pointer;
+
+          &:hover{
+              border: 0.75px solid #707070;
+          }
+        }
+    }
+  }
+
+  .ContactForm{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+
+    &::after{
+        content: "";
+        background-image: url("../../assets/Background-Contact-Form.jpg");
+        background-position-x: 30% ;
+        opacity: 0.5;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .txtBox{
+        width: 100%;
+        padding-top: 10rem ;
+        padding-right: 4rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            text-align: center;
+            font-size: 38px;
+            font-weight: 400;
+            letter-spacing: -0.76px;
+            color: #3C3C3C;
+            font-family: 14px;
+        }
+        img{
+            padding: 1.5rem 0;
+        }
+
+        .form{
+            padding-top:2rem;
+            padding-bottom: 20rem;
+            form{
+                position: relative;
+                .personalData{
+                    display: flex;
+                    flex-direction: row;
+                    padding-bottom: 2rem;
+
+                    .name, .email{
+                        display: flex;
+                        flex-direction: column;
+                        border-bottom: 0.75px solid gray;
+                        margin: 0 0.5rem;
+                    }
+
+                    label, input{
+                        display: block;
+
+                    }
+                    label{
+                        font-weight: 800;
+                        font-size: 16px;
+                        font-family: 14px;
+                        color:#3C3C3C;
+                        letter-spacing: 0;
+                        padding-bottom: 0.5rem;
+                    }
+                    input {
+                        padding:0.2rem;
+                        color: #3C3C3C26;
+                        font-weight: 400;
+                        font-size: 18px;
+                        font-family: 14px;
+                        letter-spacing: 0;
+                        background-color: transparent;
+                        border: 0.75px solid transparent;
+
+                        &:focus{
+                            border: 0.75px solid #FAD648;
+                        }
+                        &[type="email"], &[type="text"]{
+                            color: #3C3C3C;
+                        }
+                        
+                    }
+                }
+                .textarea{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 0.5rem;
+                    border-bottom: 0.75px solid gray;
+
+                    label, textarea{
+                        display: block;
+                    }
+                    label{
+                        font-weight: 800;
+                        font-size: 16px;
+                        font-family: 14px;
+                        color:#3C3C3C;
+                        letter-spacing: 0;
+                        padding-bottom: 0.5rem;
+                    }
+                    textarea {
+                        color: #3C3C3C26;
+                        font-weight: 400;
+                        font-size: 18px;
+                        font-family: 14px;
+                        letter-spacing: 0;
+                        background-color: transparent;
+                        border: none;
+                        width: 100%;
+                        height: auto;
+                        resize: none;
+                        border: 0.75px solid transparent;
+                        padding:0.2rem;
+                        &:focus{
+                            border: 0.75px solid #FAD648;
+                        }
+                        &[type="text"]{
+                            color: #3C3C3C;
+                        }
+                    }
+                }
+            }
+            button.submit{
+                font-weight: 300;
+                font-size: 18px;
+                font-family: 14px;
+                letter-spacing: 0;
+                color: #000000;
+                background-color: transparent;
+                padding: 1rem 2rem;
+                border:0.75px solid #3C3C3C ;
+                position: absolute;
+                right: 0;
+                margin: 2rem 3rem;
+            }
+        }
+    }
+   
+}
+.AlertSent{
+    font-family: 14px;
+    font-weight: 800;
+    color: green;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+}
+.errorMessage{
+    font-family: 14px;
+    font-weight: 800;
+    color: red;
+    font-size: 14px;
+    display: inline-block;
+    text-align: start;
+    padding:0.5rem;
+}
+
+}

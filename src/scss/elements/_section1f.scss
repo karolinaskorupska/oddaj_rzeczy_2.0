@@ -1,0 +1,150 @@
+.Section1f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    .foundationHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        padding-top:4rem;
+
+        h2{
+            text-align: center;
+            font-size: 38px;
+            font-weight: 400;
+            letter-spacing: -0.76px;
+            color: $color5;
+            font-family: $font-base;
+        }
+        img{
+            padding:1.5rem 0;
+        }
+    }
+    .foundationKind{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        h3{
+            text-align: center;
+            padding-top: 1rem;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: $baseFontSize;
+            color: $color5;
+            letter-spacing: 0;
+            padding: 1rem 1.5rem;
+            line-height: 24px;
+            border: 0.75px solid transparent;
+            cursor: pointer;
+            &:hover{
+                border: 0.75px solid $color5;
+
+            }
+
+        }
+    }
+    .foundationDescription{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        padding: 2rem 0;
+        p{
+            text-align: center;
+            font-weight: 400;
+            font-size: 22px;
+            font-family: $font-base;
+            color: $color5;
+            letter-spacing: 0;
+            width: 40%;
+            
+        }
+    }
+    .foundationsList{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-self: center;
+        width: 100%;
+        padding: 2rem 0;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: space-between;
+
+            li{
+                border-bottom: 1px solid #707070;
+                padding: 1rem 0;
+                padding: 1rem 0;
+                .foundation{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    .leftSide{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: start;
+                        align-content: center;
+                        padding-right: 40%;
+                        h4{
+                            text-align: left;
+                            font-weight: 200;
+                            font-size: 26px;
+                            font-family: $font-base;
+                            color: $color5;
+                            
+                        }
+                        p{
+                            text-align: left;
+                            font-weight: 200;
+                            font-size: 18px;
+                            font-family: $font-base;
+                            color: $color5;
+                            padding-top: 0.5rem;
+                        }
+                    }
+                    .rightSide{
+                            text-align: left;
+                            font-weight: 200;
+                            font-size: 18px;
+                            font-family: $font-base;
+                            color: $color5;
+                    }
+
+                }
+            }
+        }
+    }
+    .pages{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+
+        p{
+          font-weight: 400;
+          font-size: 18px;
+          color:$color5;
+          font-family: $baseFontSize;
+          padding: 0.5rem;  
+          padding:1rem;
+          border: 0.75px solid transparent;
+          cursor: pointer;
+
+          &:hover{
+              border: 0.75px solid #707070;
+          }
+        }
+    }
+}

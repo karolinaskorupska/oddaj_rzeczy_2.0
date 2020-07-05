@@ -1,0 +1,27 @@
+footer{
+    width: 100vw;
+    
+    .copyright{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        p{
+            display: block;
+            text-align: center;
+        }
+        
+    }
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        img{
+           padding: 1rem ;
+        }
+    }
+
+}
