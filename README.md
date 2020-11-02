@@ -1,4 +1,4 @@
-This project was a "Career Lab" project from CodersLab- they provided design in adobe xd.
+This project was a "Career Lab" project from CodersLab- they provided design in adobe xd.\n
 I made this website in React, with:
 -json server- render information components on home page,
 -React Router, React Grid System, React Scroll,
