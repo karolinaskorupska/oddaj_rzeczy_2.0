@@ -1,4 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was a "Career Lab" project from CodersLab- they provided design in adobe xd.
+I made this website in React, with:
+-json server- render information components on home page,
+-React Router, React Grid System, React Scroll,
+-Login and Logout -  with Firebase,
+- style - node-sass.
+
 
 ## Available Scripts
 
