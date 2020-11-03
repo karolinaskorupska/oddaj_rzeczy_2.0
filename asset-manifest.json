@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/oddaj_rzeczy_2.0/static/css/main.971600f8.chunk.css",
+    "main.css": "/oddaj_rzeczy_2.0/static/css/main.4798ed08.chunk.css",
     "main.js": "/oddaj_rzeczy_2.0/static/js/main.a1690a28.chunk.js",
     "main.js.map": "/oddaj_rzeczy_2.0/static/js/main.a1690a28.chunk.js.map",
     "runtime-main.js": "/oddaj_rzeczy_2.0/static/js/runtime-main.b65caf0f.js",
@@ -8,9 +8,9 @@
     "static/js/2.c11cba38.chunk.js": "/oddaj_rzeczy_2.0/static/js/2.c11cba38.chunk.js",
     "static/js/2.c11cba38.chunk.js.map": "/oddaj_rzeczy_2.0/static/js/2.c11cba38.chunk.js.map",
     "index.html": "/oddaj_rzeczy_2.0/index.html",
-    "precache-manifest.fc86ce6ae891be2b7f92eca564afb668.js": "/oddaj_rzeczy_2.0/precache-manifest.fc86ce6ae891be2b7f92eca564afb668.js",
+    "precache-manifest.067b3a77e33bc6cab10fd643911efab4.js": "/oddaj_rzeczy_2.0/precache-manifest.067b3a77e33bc6cab10fd643911efab4.js",
     "service-worker.js": "/oddaj_rzeczy_2.0/service-worker.js",
-    "static/css/main.971600f8.chunk.css.map": "/oddaj_rzeczy_2.0/static/css/main.971600f8.chunk.css.map",
+    "static/css/main.4798ed08.chunk.css.map": "/oddaj_rzeczy_2.0/static/css/main.4798ed08.chunk.css.map",
     "static/js/2.c11cba38.chunk.js.LICENSE.txt": "/oddaj_rzeczy_2.0/static/js/2.c11cba38.chunk.js.LICENSE.txt",
     "static/media/landing.scss": "/oddaj_rzeczy_2.0/static/media/People.6fa36651.jpg",
     "static/media/Decoration.svg": "/oddaj_rzeczy_2.0/static/media/Decoration.2290784e.svg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.b65caf0f.js",
     "static/js/2.c11cba38.chunk.js",
-    "static/css/main.971600f8.chunk.css",
+    "static/css/main.4798ed08.chunk.css",
     "static/js/main.a1690a28.chunk.js"
   ]
 }
